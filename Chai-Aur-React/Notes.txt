@@ -1,0 +1,40 @@
+What is reconciliation?
+
+reconciliation
+The algorithm React uses to diff one tree with another to determine which parts need to be changed.
+
+update
+A change in the data used to render a React app. Usually the result of `setState`. Eventually results in a re-render.
+The central idea of React's API is to think of updates as if they cause the entire app to re-render. This allows the developer to reason declaratively, rather than worry about how to efficiently transition the app from any particular state to another (A to B, B to C, C to A, and so on).
+
+Although Fiber is a ground-up rewrite of the reconciler, the high-level algorithm described in the React docs will be largely the same. The key points are:
+
+## Interview prospective
+
+Different component types are assumed to generate substantially different trees. React will not attempt to diff them, but rather replace the old tree completely.
+
+Diffing of lists is performed using keys. Keys should be "stable, predictable, and unique."
+
+
+
+What is a fiber?
+We're about to discuss the heart of React Fiber's architecture. Fibers are a much lower-level abstraction than application developers typically think about. If you find yourself frustrated in your attempts to understand it, don't feel discouraged. Keep trying and it will eventually make sense. (When you do finally get it, please suggest how to improve this section.)
+
+Here we go!
+
+We've established that a primary goal of Fiber is to enable React to take advantage of scheduling. Specifically, we need to be able to
+
+pause work and come back to it later.
+assign priority to different types of work.
+reuse previously completed work.
+abort work if it's no longer needed.
+
+
+Structure of a fiber
+Note: as we get more specific about implementation details, the likelihood that something may change increases. Please file a PR if you notice any mistakes or outdated information.
+
+In concrete terms, a fiber is a JavaScript object that contains information about a component, its input, and its output.
+
+A fiber corresponds to a stack frame, but it also corresponds to an instance of a component.
+
+Here are some of the important fields that belong to a fiber. (This list is not exhaustive.)
