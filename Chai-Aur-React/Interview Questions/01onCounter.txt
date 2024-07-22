@@ -1,0 +1,53 @@
+Question : 
+
+  const addValue = () => {
+    setCounter(counter + 1);
+    setCounter(counter + 1);
+    setCounter(counter + 1);
+    setCounter(counter + 1);
+  }
+
+How many times the counter increment? 
+It increases the counter to 1 or 4 (as it's starting value is 0)
+
+
+Answer : At one click only the counter increases itself to 1. 
+         useState make a batch and it see that they are working same.
+
+
+To get the counter to increase itself 4 times, we can do like that --> we can use callback function that much time
+
+when it comes from callback then it updates the counter after updating it's before or completing the last one. Then the next one is call then it further updates itself.
+
+Now it is not a bunch of packages to update.
+
+const addValue = () => {
+   setCounter((prevCounter) => {return prevCounter + 1});
+   setCounter((prevCounter) => prevCounter + 1 );
+   setCounter((prevCounter) => prevCounter + 1 );
+   setCounter((prevCounter) => prevCounter + 1 );
+}
+
+
+
+/*
+
+const addValue = () => {
+  setCounter((prevCounter) => prevCounter + 1);
+  setCounter((prevCounter) => prevCounter + 1);
+  setCounter((prevCounter) => prevCounter + 1);
+  setCounter((prevCounter) => prevCounter + 1);
+}
+Explanation:
+Functional Updates with useState:
+
+React's useState hook allows you to pass a function that receives the previous state (prevCounter in this case) and returns the new state value based on it. This ensures that each setCounter call operates on the most up-to-date state value.
+State Updates:
+
+Each setCounter call inside addValue will correctly increment counter by 1, irrespective of potential batching optimizations by React.
+Preventing Stale State Issues:
+
+Using the functional update form (prevCounter => prevCounter + 1) ensures that you avoid issues where counter might have been stale due to React's state batching.
+This approach guarantees that counter will increase by 4 every time addValue is called, resolving any potential batching-related discrepancies. Each call to setCounter operates independently on the latest state, resulting in the desired behavior of incrementing counter by 4.
+
+*/
