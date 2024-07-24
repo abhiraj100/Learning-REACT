@@ -8,8 +8,8 @@ export class Service{
     
     constructor(){
         this.client
-        .setEndpoint(conf.appwriteUrl)
-        .setProject(conf.appwriteProjectId);
+            .setEndpoint(conf.appwriteUrl)
+            .setProject(conf.appwriteProjectId);
         this.databases = new Databases(this.client);
         this.bucket = new Storage(this.client);
     }
@@ -44,9 +44,8 @@ export class Service{
                     content,
                     featuredImage,
                     status,
-
                 }
-            )
+            );
         } catch (error) {
             console.log("Appwrite service :: updatePost :: error", error);
         }
@@ -60,10 +59,10 @@ export class Service{
                 slug
             
             )
-            return true
+            return true;
         } catch (error) {
             console.log("Appwrite service :: deletePost :: error", error);
-            return false
+            return false;
         }
     }
 
@@ -77,7 +76,7 @@ export class Service{
             )
         } catch (error) {
             console.log("Appwrite service :: getPost :: error", error);
-            return false
+            return false;
         }
     }
 
@@ -92,7 +91,7 @@ export class Service{
             )
         } catch (error) {
             console.log("Appwrite service :: getPosts :: error", error);
-            return false
+            return false;
         }
     }
 
@@ -107,7 +106,7 @@ export class Service{
             )
         } catch (error) {
             console.log("Appwrite service :: uploadFile :: error", error);
-            return false
+            return false;
         }
     }
 
@@ -117,10 +116,10 @@ export class Service{
                 conf.appwriteBucketId,
                 fileId
             )
-            return true
+            return true;
         } catch (error) {
             console.log("Appwrite service :: deleteFile :: error", error);
-            return false
+            return false;
         }
     }
 
