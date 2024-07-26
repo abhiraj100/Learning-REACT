@@ -53,12 +53,12 @@ export class AuthService {
         } catch (error) {
             console.log("Appwrite serive :: logout :: error", error);
         }
-    }
+    } 
 }
 
 const authService = new AuthService();
 
-export default authService
+export default authService;
 
 
 
