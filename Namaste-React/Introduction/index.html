@@ -23,8 +23,14 @@
 
 
     <!-- this is the first way to inject the react in the browser -->
+
+    <h1>Hello I'm at the top of root</h1>
     
-    <div id="root"></div>
+    <div id="root">
+        <h1>Abhiraj is present here!</h1>  <!--this h1 is replace by the parent. Firstly it is loaded and then it will replace by root.render(parent)-->
+    </div>
+    
+    <h1>Hello I'm at the below of root</h1>
 
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
