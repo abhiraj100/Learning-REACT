@@ -1,0 +1,3 @@
+Redux Thunk -> It is a middleware to retrieve the data from the API -> through this we dispatch the action, and that action call the api and set the data that is coming from the api to the state.
+
+// For the delayed task -> we use thunk middleware
