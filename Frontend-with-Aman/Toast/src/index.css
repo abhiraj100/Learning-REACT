@@ -1,0 +1,81 @@
+body {
+  background: linear-gradient(to bottom right, #ff7e5f, #feb47b);
+}
+
+.toast-container {
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.toast {
+  background-color: green;
+  width: 12rem;
+  padding: 1rem;
+  color: white;
+  border-radius: 0.5rem;
+  position: relative;
+  animation: slide 1s 1;
+  margin: 0.5rem;
+
+  span {
+    position: absolute;
+    right: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.success {
+  background-color: green;
+}
+
+.info {
+  background-color: #5899fe;
+}
+
+.warning {
+  background-color: #fca200;
+}
+
+.error {
+  background-color: #df5239;
+}
+
+.container {
+  /* position: relative; */
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  width: 18rem;
+  margin: 10px 0px;
+  padding: 10px;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+}
+
+button {
+  padding: 10px;
+  align-items: center;
+  margin: 5px;
+  box-shadow: offset-x offset-y blur-radius spread-radius color;
+}
+
+.title {
+  color: red;
+  margin-left: 35%;
+  text-decoration: underline;
+  text-shadow: #fca200;
+}
