@@ -1,0 +1,32 @@
+{
+    "faqs" : [
+        {
+            "question": "what is frontend development?",
+            "answer": "Front-end development is the process of creating the visual and interactive elements of a website that users see and interact with it."
+        },
+        {
+            "question": "what languages are used in frontend development?",
+            "answer": "HTML, CSS, JavaScript, JSX, and TypeScript are the five most essential programming languages in front-end web development. HTML is the standard language used in the creation of websites and is the first language any potential Front End Web Developer should learn."
+        },
+        {
+            "question": "what are some popular frontend frameworks and libraries?",
+            "answer": "Frontend frameworks are collections of pre-written code and tools that help developers build UI/UX of a website or web application. These frameworks provide a structured approach to web development, offering a set of reusable components, libraries, and utilities to streamline the process."
+        },
+        {
+            "question": "what is responsive design?",
+            "answer": "Responsive design is a web design approach that makes a website adapt to a user's device, ensuring that the content and layout are optimal across different screen sizes, orientations, and platforms."
+        },
+        {
+            "question": "what are CSS preprocessors?",
+            "answer": "CSS preprocessors are scripting languages that extend the default capabilities of CSS. They enable us to use logic in our CSS code, such as variables, nesting, inheritance, mixins, functions, and mathematical operations."
+        },
+        {
+            "question": "what is the Document Object Model(DOM)?",
+            "answer": "The Document Object Model (DOM) is a programming interface that represents a web document as a tree structure of nodes and objects. This structure allows programs to interact with the document's content, style, and structure."
+        },
+        {
+            "question": "what is the role frontend developer?",
+            "answer": "A front-end developer creates the part of a website or web application that users see and interact with. They are responsible for the design, layout, visual elements, and interactive features of a website or app."
+        }
+    ]
+}
