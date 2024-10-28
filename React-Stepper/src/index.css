@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle, #9c9c9c, #06070fb0);
+    /* background: linear-gradient(to bottom, #ee3101, #12e2e6, #ff6a00);   */
+        /* background: linear-gradient(to right, black, white); */
+    
+}
