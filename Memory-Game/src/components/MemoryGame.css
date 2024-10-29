@@ -1,0 +1,31 @@
+.grid-container{
+    display: grid;
+    height: 20rem;
+    width: 20rem;
+    grid-template-columns: repeat(6, 1fr);
+    border: 1px solid black;
+    padding: 15px;
+    background-color: yellow;
+}
+
+.cards {
+    height: 3rem;
+    width: 3rem;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+h2{
+    margin-left: 2rem;
+    color: purple;
+}
+h1{
+    text-align: center;
+    color: purple;
+    text-decoration: underline;
+
+}
