@@ -55,6 +55,7 @@ const DragAndDrop = ({ initialState }) => {
               marginBottom: "5px",
               width: "250px",
               minHeight: "300px",
+              backgroundColor: "yellow"
             }}
           >
             <h2 style={{ textAlign: "center" }}>{container}</h2>
