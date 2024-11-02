@@ -1,0 +1,33 @@
+body {
+    background: radial-gradient(circle, #a0e9fd, #3b82f6);
+    /* background: radial-gradient(ellipse, #a8e063, #56ab2f); */
+    /* background: radial-gradient(circle, #ff7e5f, #feb47b, #86a8e7, #3b8d99); */
+    /* position: relative; */
+}
+
+.title {
+    top: -20%;
+}
+
+.main-div {
+    background: radial-gradient(circle, #a0e9fd, #3b82f6);
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 25%;
+    top: 30%;
+}
+
+.desc {
+    margin-left: 25%;
+}
+
+/* .input-field {
+    width: 25rem;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
