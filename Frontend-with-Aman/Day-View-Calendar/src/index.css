@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.calendar {
+    position: relative;
+}
+
+.line{
+    position: absolute;
+    left: 5rem;
+    width: 1px;
+    height: 100%;
+    background-color: lightgray;
+}
+
+.slot {
+    width: 100%;
+    height: 5rem;
+    border-bottom: 1px solid lightgray;
+    padding-left: 1rem;
+}
+
+.event{
+    position: absolute;
+    /* height: 100%; */
+    width: calc(100% - 5rem);
+    /* width: 90%; */
+    background-color: lightblue;
+    left: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
